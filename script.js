@@ -1,4 +1,3 @@
-
 // Scroll to top functionality
 document.addEventListener('DOMContentLoaded', function () {
     const backToTopButton = document.createElement('button');
@@ -11,11 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 200) {
+        if (window.scrollY > 300) {
             backToTopButton.style.display = 'block';
         } else {
             backToTopButton.style.display = 'none';
         }
     });
 });
-

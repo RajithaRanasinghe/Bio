@@ -1,54 +1,180 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    text-align: center;
-    margin: 20px 0;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 5px;
-}
-
-hr {
-    margin: 10px 0;
-}
-
-address, p, li {
-    font-size: 14px;
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-main {
-    margin: 20px auto;
-    padding: 0 15px;
-    max-width: 800px;
-}
-
-h2 {
-    font-size: 18px;
-    color: #444;
+h1, h2, h3 {
+    color: #333;
     margin-bottom: 10px;
 }
 
-h3 {
-    font-size: 16px;
-    color: #555;
+/* Header Styling */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header .subtitle {
+    font-size: 1.25em;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+header address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+header address a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+header address a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 1px solid #fff;
+    width: 50%;
+    margin: 20px auto;
+}
+
+/* Main Section Styles */
+main {
+    margin-top: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #0073e6;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 ul {
-    list-style: disc;
-    margin: 10px 0;
-    padding-left: 20px;
+    list-style-type: none;
+    margin-left: 20px;
 }
 
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    font-weight: bold;
+}
+
+/* Professional Profile */
+#professional-profile p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Work Experience */
+#work-experience div {
+    margin-bottom: 30px;
+}
+
+#work-experience h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#work-experience p {
+    font-size: 1em;
+    color: #666;
+}
+
+#work-experience ul {
+    margin-left: 40px;
+}
+
+#work-experience ul li {
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+/* Education */
+#education ul {
+    margin-left: 20px;
+}
+
+#education ul li {
+    margin-bottom: 10px;
+}
+
+/* Certifications */
+#certifications ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Skills */
+#skills-and-technical-proficiencies ul li {
+    margin-bottom: 10px;
+}
+
+/* Projects */
+#projects-research ul li {
+    margin-bottom: 10px;
+}
+
+/* Publications */
+#publications ul li {
+    margin-bottom: 10px;
+}
+
+/* References */
+#references div {
+    margin-bottom: 20px;
+}
+
+#references h3 {
+    font-size: 1.3em;
+    color: #0073e6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Link Styling */
 a {
-    color: #007BFF;
+    color: #0073e6;
     text-decoration: none;
 }
 
@@ -56,65 +182,72 @@ a:hover {
     text-decoration: underline;
 }
 
-
-
-#professional-profile {
-    margin: 20px 0;
-    padding: 15px;
-    border-left: 4px solid #007BFF;
-    background-color: #f9f9f9;
-}
-
-#professional-profile h2 {
-    color: #333;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-#professional-profile p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-}
-
-
-#core-competencies {
-    margin: 20px 0;
-    padding: 15px;
-    border-left: 4px solid #28a745;
-    background-color: #f9f9f9;
-}
-
-#core-competencies h2 {
-    color: #333;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-#core-competencies ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.6;
-}
-
-/* Back to Top Button */
-.back-to-top {
+/* Back-to-Top Button */
+#back-to-top-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #0066cc;
+    background-color: #0073e6;
     color: white;
     border: none;
     padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 1.2em;
     cursor: pointer;
     display: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.back-to-top:hover {
-    background-color: #004d99;
+#back-to-top-button:hover {
+    background-color: #005bb5;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header .subtitle {
+        font-size: 1.1em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+
+    #back-to-top-button {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header .subtitle {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.3em;
+    }
+
+    footer p {
+        font-size: 0.7em;
+    }
+}
